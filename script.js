@@ -58,18 +58,13 @@ document.addEventListener('DOMContentLoaded', () => {
   // 5. Download CV Action
   const cvBtn = document.getElementById('downloadCvBtn');
   if (cvBtn) {
-    cvBtn.addEventListener('click', (e) => {
-      e.preventDefault();
-      
-      // Provide instant feedback and trigger mail / resume view
+    cvBtn.addEventListener('click', () => {
       const originalHtml = cvBtn.innerHTML;
-      cvBtn.innerHTML = '<i class="bi bi-check2 me-1"></i> Opening CV...';
+      cvBtn.innerHTML = '<i class="bi bi-check2 me-1"></i> Downloading...';
       
       setTimeout(() => {
-        // Direct to contact or trigger download
-        window.open('https://www.linkedin.com/in/seetha-sivakumar', '_blank', 'noopener');
         cvBtn.innerHTML = originalHtml;
-      }, 400);
+      }, 2000);
     });
   }
 
