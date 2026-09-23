@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Seetha S | Frontend Developer</title>
+  <meta name="description" content="Portfolio of Seetha S, a Frontend Developer building responsive, scalable and user-friendly web experiences with React, Next.js, and modern web technologies.">
+  <meta name="theme-color" content="#070B18">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23070B18'/%3E%3Ctext x='32' y='46' font-size='38' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='%23818CF8'%3ES%3C/text%3E%3C/svg%3E">
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;700&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS & Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-root-margin="-20% 0px -60%" tabindex="0">
+
+  <!-- Navigation -->
+  <nav id="mainNav" class="navbar navbar-expand-lg navbar-dark fixed-top site-nav" aria-label="Primary Navigation">
+    <div class="container">
+      <a class="navbar-brand" href="#home">
+        <span class="brand-icon">&lt;/&gt;</span>
+        <span>Seetha S</span>
+      </a>
+      
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+              aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav mx-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#achievements">Achievements</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+        <div class="d-flex align-items-center mt-3 mt-lg-0">
+          <a class="btn btn-download" href="#contact" id="downloadCvBtn">
+            <i class="bi bi-download me-1" aria-hidden="true"></i> Download CV
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="container position-relative">
+        <div class="row align-items-center g-5">
+
+          <!-- Left Column -->
+          <div class="col-lg-6 z-2">
+            <div class="hero-badge">Frontend Developer</div>
+            <h1 class="hero-name">Seetha <span class="hero-accent-s">S</span></h1>
+            <h2 class="hero-headline">
+              Building responsive, scalable<br>
+              and user-friendly <span class="hero-purple-text">web experiences.</span>
+            </h2>
+            <p class="hero-desc">
+              I create clean, modern and interactive web applications with a focus on performance, accessibility and great user experience. Passionate about turning ideas into beautiful digital products.
+            </p>
+
+            <div class="d-flex flex-wrap align-items-center gap-3 mt-4">
+              <a class="btn hero-btn-primary" href="#projects">
+                View My Projects <i class="bi bi-arrow-right ms-2" aria-hidden="true"></i>
+              </a>
+              <a class="btn hero-btn-ghost" href="#contact">
+                <i class="bi bi-envelope me-2" aria-hidden="true"></i> Get in Touch
+              </a>
+            </div>
+
+            <!-- Social Links Row -->
+            <div class="hero-social-row">
+              <a class="hero-social-btn social-linkedin" href="https://www.linkedin.com/in/seetha-sivakumar" target="_blank" rel="noopener" aria-label="LinkedIn">
+                <i class="bi bi-linkedin" aria-hidden="true"></i>
+              </a>
+              <a class="hero-social-btn social-github" href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub">
+                <i class="bi bi-github" aria-hidden="true"></i>
+              </a>
+              <a class="hero-social-btn social-email" href="mailto:seethasivakumar001@gmail.com" aria-label="Email">
+                <i class="bi bi-envelope-fill" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Column: 3D Code Window with Organic Blobs -->
+          <div class="col-lg-6 z-2">
+            <div class="hero-card-container">
+              
+              <!-- Organic 3D Blobs in Background using 3d_curve.png -->
+              <div class="hero-blob-bg" aria-hidden="true">
+                <img src="images/3d_curve.png" alt="" class="hero-3d-curve-img">
+                <!-- Small Accent Sparkle -->
+                <div class="hero-sparkle-star">✦</div>
+              </div>
+
+              <!-- 3D Tilted Code Window -->
+              <div class="code-window-3d" id="heroCodeCard">
+                <div class="code-header">
+                  <div class="code-dots">
+                    <span class="code-dot dot-red"></span>
+                    <span class="code-dot dot-yellow"></span>
+                    <span class="code-dot dot-green"></span>
+                  </div>
+                  <div class="code-tag-badge">React • TypeScript</div>
+                </div>
+                
+                <div class="code-content">
+                  <div class="code-line"><span class="line-num">1</span><span><span class="tk-kw">const</span> <span class="tk-fn">Seetha</span> = () =&gt; {</span></div>
+                  <div class="code-line"><span class="line-num">2</span><span>&nbsp;&nbsp;<span class="tk-kw">return</span> (</span></div>
+                  <div class="code-line"><span class="line-num">3</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tk-tag">div</span> <span class="tk-prop">className</span>=<span class="tk-str">"developer"</span>&gt;</span></div>
+                  <div class="code-line"><span class="line-num">4</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tk-tag">h1</span>&gt;<span class="tk-val">Better Web Experiences</span>&lt;/<span class="tk-tag">h1</span>&gt;</span></div>
+                  <div class="code-line"><span class="line-num">5</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tk-tag">p</span>&gt;<span class="tk-val">Code • Design • Build</span>&lt;/<span class="tk-tag">p</span>&gt;</span></div>
+                  <div class="code-line"><span class="line-num">6</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/<span class="tk-tag">div</span>&gt;</span></div>
+                  <div class="code-line"><span class="line-num">7</span><span>&nbsp;&nbsp;);</span></div>
+                  <div class="code-line"><span class="line-num">8</span><span>};</span></div>
+                </div>
+
+                <!-- Floating Always Learning Badge -->
+                <div class="floating-learning-badge">
+                  <span class="learning-icon">&lt;/&gt;</span>
+                  <span>Always Learning</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats / Metrics Strip -->
+    <section class="stats-section">
+      <div class="container">
+        <div class="stats-card-container">
+          <div class="row g-0 align-items-center">
+            
+            <div class="col-6 col-lg-3 stat-col">
+              <div class="stat-box">
+                <span class="stat-icon stat-icon-code">&lt;/&gt;</span>
+                <span class="stat-number">2+</span>
+                <span class="stat-label">Years of Experience</span>
+              </div>
+            </div>
+
+            <div class="col-6 col-lg-3 stat-col">
+              <div class="stat-box">
+                <span class="stat-icon"><i class="bi bi-kanban" aria-hidden="true"></i></span>
+                <span class="stat-number">3+</span>
+                <span class="stat-label">Total Projects</span>
+              </div>
+            </div>
+
+            <div class="col-6 col-lg-3 stat-col">
+              <div class="stat-box">
+                <span class="stat-icon"><i class="bi bi-people" aria-hidden="true"></i></span>
+                <span class="stat-number">8.39</span>
+                <span class="stat-label">CGPA / Education</span>
+              </div>
+            </div>
+
+            <div class="col-6 col-lg-3 stat-col">
+              <div class="stat-box">
+                <span class="stat-icon"><i class="bi bi-star" aria-hidden="true"></i></span>
+                <span class="stat-number">3rd</span>
+                <span class="stat-label">Year B.Tech (CSE)</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <div class="container">
+        
+        <!-- Top Row: Bio & Workspace Card -->
+        <div class="row g-5 align-items-center mb-5">
+          <!-- Left Column: Story -->
+          <div class="col-lg-6">
+            <div class="section-badge">About Me</div>
+            <h2 class="section-title">A little <span class="text-cyan">about</span> <span class="text-purple">me</span></h2>
+            <p class="about-p">
+              I turn design concepts into fast, cross-browser websites and I love working with a team on web projects from ideas to finished build.
+            </p>
+            <p class="about-p mb-0">
+              I'm a frontend developer skilled in React, Next.js and modern web technologies. I enjoy solving problems, learning new things and creating meaningful digital experiences.
+            </p>
+          </div>
+
+          <!-- Right Column: Split Workspace Card -->
+          <div class="col-lg-6">
+            <div class="about-card-split">
+              <div class="row g-0 align-items-center">
+                
+                <!-- Left: Workspace Visual Illustration -->
+                <div class="col-sm-6 p-2 p-sm-3">
+                  <div class="about-visual-frame">
+                    <img src="images/code.png" alt="Workspace Setup" class="about-code-img">
+                  </div>
+                </div>
+
+                <!-- Right: Details List -->
+                <div class="col-sm-6 p-3 p-sm-4">
+                  <ul class="about-details-list">
+                    <li class="about-details-item">
+                      <span class="about-item-icon"><i class="bi bi-geo-alt" aria-hidden="true"></i></span>
+                      <div class="about-item-content">
+                        <strong>Location</strong>
+                        <span>Chennai, India</span>
+                      </div>
+                    </li>
+                    <li class="about-details-item">
+                      <span class="about-item-icon"><i class="bi bi-mortarboard" aria-hidden="true"></i></span>
+                      <div class="about-item-content">
+                        <strong>Education</strong>
+                        <span>B.Tech - Computer Science</span>
+                      </div>
+                    </li>
+                    <li class="about-details-item">
+                      <span class="about-item-icon"><i class="bi bi-heart" aria-hidden="true"></i></span>
+                      <div class="about-item-content">
+                        <strong>Hobbies</strong>
+                        <span>Travel, Tech, Design</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Row: 3 Feature Cards Spanning Horizontally -->
+        <div class="row g-4 mt-2">
+          <!-- 1. Responsive Design -->
+          <div class="col-md-4">
+            <div class="feature-card-horizontal">
+              <div class="feature-icon-btn">
+                <i class="bi bi-lightning-charge" aria-hidden="true"></i>
+              </div>
+              <div class="feature-content">
+                <h4>Responsive Design</h4>
+                <p>Optimized for all devices and screen sizes.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Collaborative -->
+          <div class="col-md-4">
+            <div class="feature-card-horizontal">
+              <div class="feature-icon-btn">
+                <i class="bi bi-people" aria-hidden="true"></i>
+              </div>
+              <div class="feature-content">
+                <h4>Collaborative</h4>
+                <p>Work well in teams and communicate effectively.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Problem Solver -->
+          <div class="col-md-4">
+            <div class="feature-card-horizontal">
+              <div class="feature-icon-btn">
+                <i class="bi bi-lightbulb" aria-hidden="true"></i>
+              </div>
+              <div class="feature-content">
+                <h4>Problem Solver</h4>
+                <p>Always curious and love challenges.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Experience and Education Section -->
+    <section id="experience" class="timeline-section">
+      <div class="container">
+        <div class="mb-4">
+          <div class="section-badge">My Journey</div>
+          <h2 class="section-title">Experience and <span class="text-gradient">Education</span></h2>
+          <p class="section-subtitle mb-0">Where I've grown and what I've learned.</p>
+        </div>
+
+        <div class="timeline-wrapper">
+          <!-- Item 1: Frontend Developer -->
+          <div class="timeline-row-item">
+            <!-- Left Date -->
+            <div class="timeline-left-date">
+              <span>Apr 2023 –</span>
+              <span>Present</span>
+            </div>
+
+            <!-- Central Rail & Dot -->
+            <div class="timeline-rail">
+              <span class="timeline-dot"></span>
+            </div>
+
+            <!-- Right Card Content -->
+            <div class="timeline-card-content">
+              <div class="timeline-card-block">
+                <h3 class="timeline-role-title">
+                  Frontend Developer
+                  <span class="badge-current">Current</span>
+                </h3>
+                <div class="timeline-company-name">Syscorp Technology Private Limited</div>
+                <ul class="timeline-bullets">
+                  <li>Developed modern web applications using React, Next.js and TypeScript.</li>
+                  <li>Collaborated with backend team to integrate APIs and improve application performance.</li>
+                  <li>Worked on UI/UX implementations and resolved bugs across different modules.</li>
+                  <li>Maintained code quality and followed best practices in version control (Git).</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2: Education -->
+          <div class="timeline-row-item">
+            <!-- Left Date -->
+            <div class="timeline-left-date">
+              <span>Nov 2022 –</span>
+              <span>Apr 2023</span>
+            </div>
+
+            <!-- Central Rail & Dot -->
+            <div class="timeline-rail">
+              <span class="timeline-dot"></span>
+            </div>
+
+            <!-- Right Card Content -->
+            <div class="timeline-card-content">
+              <div class="timeline-card-block">
+                <h3 class="timeline-role-title">B.Tech – Artificial Intelligence and Machine Learning</h3>
+                <div class="timeline-company-name">Bannari Amman Institute of Technology</div>
+                <ul class="timeline-bullets">
+                  <li>Gained strong foundation in programming, data structures, algorithms and ML concepts.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+      <div class="container position-relative">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <div>
+            <div class="section-badge">Featured</div>
+            <h2 class="section-title mb-1">Projects</h2>
+            <p class="section-subtitle mb-0">Some of my recent work</p>
+          </div>
+          <div class="projects-sparkle-star">✦</div>
+        </div>
+
+        <!-- Featured Project 1: Admin Dashboard -->
+        <div class="featured-project-container">
+          <div class="featured-ambient-blob" aria-hidden="true"></div>
+          
+          <div class="featured-project-card">
+            <div class="row align-items-center g-4">
+              
+              <!-- Left Column: Project Info & Connecting Rail -->
+              <div class="col-lg-4">
+                <div class="featured-left-content">
+                  <div class="featured-title-rail">
+                    <span class="featured-dot"></span>
+                    <div class="featured-rail-line"></div>
+                  </div>
+                  <div class="featured-details">
+                    <h3 class="featured-project-heading">Admin Dashboard <span class="text-cyan">(React)</span></h3>
+                    <p class="featured-project-desc">
+                      A responsive admin dashboard with modern UI and interactive charts.
+                    </p>
+                    <ul class="featured-bullets-list">
+                      <li>React, Material UI, Chart.js</li>
+                      <li>Responsive design</li>
+                      <li>Clean and modular code</li>
+                    </ul>
+                    <a class="btn hero-btn-primary mt-3" href="#contact">
+                      View Project <i class="bi bi-arrow-right ms-2" aria-hidden="true"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Right Column: Interactive Dashboard App Mockup -->
+              <div class="col-lg-8">
+                <div class="dashboard-window-mockup">
+                  <!-- Left Sidebar -->
+                  <div class="dash-sidebar">
+                    <div class="dash-nav-item active"><i class="bi bi-grid-fill me-2"></i>Dashboard</div>
+                    <div class="dash-nav-item"><i class="bi bi-people me-2"></i>Users</div>
+                    <div class="dash-nav-item"><i class="bi bi-bar-chart me-2"></i>Analytics</div>
+                    <div class="dash-nav-item"><i class="bi bi-file-earmark-text me-2"></i>Reports</div>
+                    <div class="dash-nav-item"><i class="bi bi-gear me-2"></i>Settings</div>
+                  </div>
+                  
+                  <!-- Main Dashboard Area -->
+                  <div class="dash-main-area">
+                    <!-- Top 3 Metrics -->
+                    <div class="dash-metrics-grid">
+                      <div class="dash-stat-pill">
+                        <div class="dash-stat-top">
+                          <span class="dash-dot-indicator dot-pink"></span>
+                          <span>Total Users</span>
+                        </div>
+                        <div class="dash-stat-val">8,245</div>
+                      </div>
+
+                      <div class="dash-stat-pill">
+                        <div class="dash-stat-top">
+                          <span class="dash-dot-indicator dot-purple"></span>
+                          <span>Revenue</span>
+                        </div>
+                        <div class="dash-stat-val">$12,540</div>
+                      </div>
+
+                      <div class="dash-stat-pill">
+                        <div class="dash-stat-top">
+                          <span class="dash-dot-indicator dot-pink"></span>
+                          <span>Growth</span>
+                        </div>
+                        <div class="dash-stat-val">12.5%</div>
+                      </div>
+                    </div>
+
+                    <!-- Bottom 2 Cards (Bar Chart + Donut) -->
+                    <div class="dash-charts-split">
+                      <!-- Weekly Overview -->
+                      <div class="dash-chart-card">
+                        <div class="dash-chart-header">
+                          <span>Weekly Overview</span>
+                        </div>
+                        <div class="dash-bars-container">
+                          <div class="dash-y-axis">
+                            <span>15k</span>
+                            <span>10k</span>
+                            <span>5k</span>
+                            <span>0</span>
+                          </div>
+                          <div class="dash-bars-group">
+                            <div class="dash-bar-col"><div class="dash-bar" style="height: 48%;"></div><span>Day 1</span></div>
+                            <div class="dash-bar-col"><div class="dash-bar" style="height: 65%;"></div><span>Day 2</span></div>
+                            <div class="dash-bar-col"><div class="dash-bar" style="height: 82%;"></div><span>Day 3</span></div>
+                            <div class="dash-bar-col"><div class="dash-bar" style="height: 52%;"></div><span>Day 4</span></div>
+                            <div class="dash-bar-col"><div class="dash-bar" style="height: 94%;"></div><span>Day 5</span></div>
+                            <div class="dash-bar-col"><div class="dash-bar" style="height: 70%;"></div><span>Day 6</span></div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Donut Activity Chart -->
+                      <div class="dash-chart-card dash-donut-card">
+                        <div class="dash-donut-wrap">
+                          <svg viewBox="0 0 120 120" width="85" height="85">
+                            <circle cx="60" cy="60" r="46" stroke="#1E293B" stroke-width="14" fill="none"/>
+                            <circle cx="60" cy="60" r="46" stroke="#F59E0B" stroke-width="14" fill="none" stroke-dasharray="90 290" stroke-dashoffset="0" stroke-linecap="round"/>
+                            <circle cx="60" cy="60" r="46" stroke="#EC4899" stroke-width="14" fill="none" stroke-dasharray="80 290" stroke-dashoffset="-95" stroke-linecap="round"/>
+                            <circle cx="60" cy="60" r="46" stroke="#3B82F6" stroke-width="14" fill="none" stroke-dasharray="95 290" stroke-dashoffset="-180" stroke-linecap="round"/>
+                          </svg>
+                        </div>
+                        <div class="dash-donut-legend">
+                          <span class="legend-title">Recent Activity</span>
+                          <div class="legend-indicators">
+                            <div class="legend-row"><span class="legend-dot cyan"></span><span class="legend-line"></span></div>
+                            <div class="legend-row"><span class="legend-dot orange"></span><span class="legend-line short"></span></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- 3-Card Secondary Projects Grid -->
+        <div class="row g-4 mt-3">
+          <!-- Card 1: Travel Website -->
+          <div class="col-md-4">
+            <div class="project-card">
+              <div class="project-thumb-frame">
+                <img src="images/travel_project.jpg" alt="Travel Website" class="project-img">
+                <div class="project-thumb-overlay">
+                  <span class="project-overlay-sub">Travel</span>
+                  <h4 class="project-overlay-title">Explore The World</h4>
+                </div>
+              </div>
+              <div class="project-card-body">
+                <h4 class="project-card-title">Travel Website</h4>
+                <div class="project-tags-row">
+                  <div class="project-pill-tags">
+                    <span class="tag-pill">Next.js</span>
+                    <span class="tag-pill">Tailwind CSS</span>
+                  </div>
+                  <a href="#contact" class="project-arrow-btn" aria-label="View Travel Website">
+                    <i class="bi bi-arrow-right" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: E-Commerce UI -->
+          <div class="col-md-4">
+            <div class="project-card">
+              <div class="project-thumb-frame">
+                <img src="images/ecommerce_project.jpg" alt="E-Commerce UI" class="project-img">
+              </div>
+              <div class="project-card-body">
+                <h4 class="project-card-title">E-Commerce UI</h4>
+                <div class="project-tags-row">
+                  <div class="project-pill-tags">
+                    <span class="tag-pill">React</span>
+                    <span class="tag-pill">Redux</span>
+                  </div>
+                  <a href="#contact" class="project-arrow-btn" aria-label="View E-Commerce UI">
+                    <i class="bi bi-arrow-right" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Portfolio Website -->
+          <div class="col-md-4">
+            <div class="project-card">
+              <div class="project-thumb-frame">
+                <img src="images/portfolio_project.jpg" alt="Portfolio Website" class="project-img">
+              </div>
+              <div class="project-card-body">
+                <h4 class="project-card-title">Portfolio Website</h4>
+                <div class="project-tags-row">
+                  <div class="project-pill-tags">
+                    <span class="tag-pill">React</span>
+                    <span class="tag-pill">Framer Motion</span>
+                  </div>
+                  <a href="#contact" class="project-arrow-btn" aria-label="View Portfolio Website">
+                    <i class="bi bi-arrow-right" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+      <div class="container">
+        <div class="d-flex flex-wrap justify-content-between align-items-end mb-4">
+          <div>
+            <div class="section-badge">Technical Skills</div>
+            <h2 class="section-title mb-0">My Skills</h2>
+          </div>
+          <span class="text-muted small mt-2 mt-sm-0">Technologies I work with</span>
+        </div>
+
+        <div class="row g-4">
+          <!-- 1. Frontend Development -->
+          <div class="col-md-6">
+            <div class="skills-card">
+              <div class="skills-card-header">
+                <div class="d-flex align-items-center gap-3">
+                  <div class="skills-category-icon icon-blue">
+                    <i class="bi bi-window-stack" aria-hidden="true"></i>
+                  </div>
+                  <h3 class="skills-category-title">Frontend Development</h3>
+                </div>
+                <div class="skills-arrow-icon">
+                  <i class="bi bi-arrow-right" aria-hidden="true"></i>
+                </div>
+              </div>
+              <ul class="skill-chips-list">
+                <li class="skill-chip">React</li>
+                <li class="skill-chip">Next.js</li>
+                <li class="skill-chip">TypeScript</li>
+                <li class="skill-chip">HTML</li>
+                <li class="skill-chip">CSS</li>
+                <li class="skill-chip">Tailwind CSS</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- 2. Programming -->
+          <div class="col-md-6">
+            <div class="skills-card">
+              <div class="skills-card-header">
+                <div class="d-flex align-items-center gap-3">
+                  <div class="skills-category-icon icon-purple">
+                    <i class="bi bi-code-slash" aria-hidden="true"></i>
+                  </div>
+                  <h3 class="skills-category-title">Programming</h3>
+                </div>
+                <div class="skills-arrow-icon">
+                  <i class="bi bi-arrow-right" aria-hidden="true"></i>
+                </div>
+              </div>
+              <ul class="skill-chips-list">
+                <li class="skill-chip">JavaScript</li>
+                <li class="skill-chip">TypeScript</li>
+                <li class="skill-chip">Python</li>
+                <li class="skill-chip">C++</li>
+                <li class="skill-chip">Java</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- 3. Tools & Others -->
+          <div class="col-md-6">
+            <div class="skills-card">
+              <div class="skills-card-header">
+                <div class="d-flex align-items-center gap-3">
+                  <div class="skills-category-icon icon-indigo">
+                    <i class="bi bi-gear-wide-connected" aria-hidden="true"></i>
+                  </div>
+                  <h3 class="skills-category-title">Tools &amp; Others</h3>
+                </div>
+                <div class="skills-arrow-icon">
+                  <i class="bi bi-arrow-right" aria-hidden="true"></i>
+                </div>
+              </div>
+              <ul class="skill-chips-list">
+                <li class="skill-chip">Git</li>
+                <li class="skill-chip">GitHub</li>
+                <li class="skill-chip">VS Code</li>
+                <li class="skill-chip">Figma</li>
+                <li class="skill-chip">Postman</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- 4. Soft Skills -->
+          <div class="col-md-6">
+            <div class="skills-card">
+              <div class="skills-card-header">
+                <div class="d-flex align-items-center gap-3">
+                  <div class="skills-category-icon icon-violet">
+                    <i class="bi bi-lightbulb" aria-hidden="true"></i>
+                  </div>
+                  <h3 class="skills-category-title">Soft Skills</h3>
+                </div>
+                <div class="skills-arrow-icon">
+                  <i class="bi bi-arrow-right" aria-hidden="true"></i>
+                </div>
+              </div>
+              <ul class="skill-chips-list">
+                <li class="skill-chip">Communication</li>
+                <li class="skill-chip">Teamwork</li>
+                <li class="skill-chip">Problem Solving</li>
+                <li class="skill-chip">Time Management</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements-section">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <div>
+            <div class="section-badge">Milestones</div>
+            <h2 class="section-title mb-1">Achievements</h2>
+            <p class="section-subtitle mb-0">Key highlights from my academic and professional journey.</p>
+          </div>
+          <!-- Decorative Dot Matrix -->
+          <div class="achieve-dot-matrix" aria-hidden="true">
+            <span></span><span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span><span></span>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <!-- Card 1: Academic Excellence -->
+          <div class="col-md-6 col-xl-3">
+            <div class="achievement-card">
+              <div class="achievement-icon-wrapper glow-amber">
+                <i class="bi bi-trophy" aria-hidden="true"></i>
+              </div>
+              <div class="achievement-info">
+                <div class="d-flex align-items-center gap-1 mb-1">
+                  <span class="achieve-mini-dot dot-amber"></span>
+                  <h4 class="achievement-title mb-0">Academic Excellence</h4>
+                </div>
+                <p class="achievement-desc">CGPA 8.39</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Certification -->
+          <div class="col-md-6 col-xl-3">
+            <div class="achievement-card">
+              <div class="achievement-icon-wrapper glow-purple">
+                <i class="bi bi-patch-check" aria-hidden="true"></i>
+              </div>
+              <div class="achievement-info">
+                <div class="d-flex align-items-center gap-1 mb-1">
+                  <span class="achieve-mini-dot dot-purple"></span>
+                  <h4 class="achievement-title mb-0">Certification</h4>
+                </div>
+                <p class="achievement-desc">Completed relevant courses and certifications</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Team Collaboration -->
+          <div class="col-md-6 col-xl-3">
+            <div class="achievement-card">
+              <div class="achievement-icon-wrapper glow-blue">
+                <i class="bi bi-people" aria-hidden="true"></i>
+              </div>
+              <div class="achievement-info">
+                <div class="d-flex align-items-center gap-1 mb-1">
+                  <span class="achieve-mini-dot dot-blue"></span>
+                  <h4 class="achievement-title mb-0">Team Collaboration</h4>
+                </div>
+                <p class="achievement-desc">Worked on real-world projects with teams</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: Continuous Learning -->
+          <div class="col-md-6 col-xl-3">
+            <div class="achievement-card">
+              <div class="achievement-icon-wrapper glow-cyan">
+                <i class="bi bi-graph-up-arrow" aria-hidden="true"></i>
+              </div>
+              <div class="achievement-info">
+                <div class="d-flex align-items-center gap-1 mb-1">
+                  <span class="achieve-mini-dot dot-cyan"></span>
+                  <h4 class="achievement-title mb-0">Continuous Learning</h4>
+                </div>
+                <p class="achievement-desc">Always exploring new technologies</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="contact-ambient-wrapper">
+          <div class="row g-5 align-items-center">
+            
+            <!-- Left Column: Info & Action Pills -->
+            <div class="col-lg-5">
+              <div class="section-badge">Get In Touch</div>
+              <h2 class="contact-heading">Have a project or an opportunity in mind?</h2>
+              <p class="contact-subtext">Send me a message, I'd love to hear from you.</p>
+
+              <div class="contact-actions-row">
+                <a class="contact-pill-btn btn-email-glow" href="mailto:seethasivakumar001@gmail.com">
+                  <span class="btn-icon-box"><i class="bi bi-envelope-fill" aria-hidden="true"></i></span>
+                  <span>Email Me</span>
+                </a>
+                <a class="contact-pill-btn btn-linkedin-glow" href="https://www.linkedin.com/in/seetha-sivakumar" target="_blank" rel="noopener">
+                  <span class="btn-icon-box"><i class="bi bi-linkedin" aria-hidden="true"></i></span>
+                  <span>LinkedIn</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Right Column: Interactive Glass Form -->
+            <div class="col-lg-7">
+              <div class="contact-form-card">
+                <form id="contactForm" novalidate>
+                  <!-- Web3Forms Access Key & Config -->
+                  <input type="hidden" name="access_key" id="web3formsKey" value="YOUR_ACCESS_KEY_HERE">
+                  <input type="hidden" name="from_name" value="Portfolio Contact Form">
+                  <input type="checkbox" name="botcheck" class="d-none">
+
+                  <div class="row g-3">
+                    <div class="col-sm-6">
+                      <label for="contactName" class="form-label-custom">Name</label>
+                      <input type="text" name="name" class="form-control-custom" id="contactName" placeholder="Your name" required>
+                    </div>
+                    <div class="col-sm-6">
+                      <label for="contactEmail" class="form-label-custom">Email</label>
+                      <input type="email" name="email" class="form-control-custom" id="contactEmail" placeholder="your@email.com" required>
+                    </div>
+                    <div class="col-sm-6">
+                      <label for="contactPhone" class="form-label-custom">Status</label>
+                      <input type="text" name="status" class="form-control-custom" id="contactPhone" placeholder="Open for opportunities">
+                    </div>
+                    <div class="col-sm-6">
+                      <label for="contactSubject" class="form-label-custom">Subject</label>
+                      <select name="subject" class="form-select-custom" id="contactSubject">
+                        <option value="General Inquiry" selected>General Inquiry</option>
+                        <option value="Frontend Development Project">Frontend Development Project</option>
+                        <option value="React / Next.js Collaboration">React / Next.js Collaboration</option>
+                        <option value="Full-time / Internship Opportunity">Full-time / Internship Opportunity</option>
+                      </select>
+                    </div>
+                    <div class="col-12">
+                      <label for="contactMessage" class="form-label-custom">Message</label>
+                      <textarea name="message" class="form-control-custom" id="contactMessage" rows="3" placeholder="Your message..." required></textarea>
+                    </div>
+                    <div class="col-12 mt-3">
+                      <button type="submit" class="btn btn-send-message w-100" id="submitBtn">
+                        Send Message <i class="bi bi-arrow-right ms-2" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+                <div id="formSuccessToast" class="alert alert-success mt-3 d-none" role="alert">
+                  <i class="bi bi-check-circle-fill me-2" aria-hidden="true"></i> Thank you! Your message has been sent successfully.
+                </div>
+                <div id="formErrorToast" class="alert alert-danger mt-3 d-none" role="alert">
+                  <i class="bi bi-exclamation-triangle-fill me-2" aria-hidden="true"></i> Failed to send message. Please check your access key or reach out directly at <a href="mailto:seethasivakumar001@gmail.com" class="text-white text-decoration-underline">seethasivakumar001@gmail.com</a>.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row align-items-center justify-content-between g-4">
+        <div class="col-sm-6 text-center text-sm-start">
+          <a class="navbar-brand text-white fw-bold d-inline-flex align-items-center gap-2" href="#home">
+            <span class="brand-icon">&lt;/&gt;</span>
+            <span class="footer-brand-name">Seetha S</span>
+          </a>
+        </div>
+        <div class="col-sm-6 text-center text-sm-end">
+          <div class="footer-social-group">
+            <a class="footer-social-btn btn-social-linkedin" href="https://www.linkedin.com/in/seetha-sivakumar" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <i class="bi bi-linkedin" aria-hidden="true"></i>
+            </a>
+            <a class="footer-social-btn btn-social-github" href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub">
+              <i class="bi bi-github" aria-hidden="true"></i>
+            </a>
+            <a class="footer-social-btn btn-social-email" href="mailto:seethasivakumar001@gmail.com" aria-label="Email">
+              <i class="bi bi-envelope-fill" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom-line">
+        <span>&copy; <span id="year">2025</span> Seetha S. All rights reserved.</span>
+        <span>Code • Design • Build</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
