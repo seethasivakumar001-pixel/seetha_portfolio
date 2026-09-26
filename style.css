@@ -1838,7 +1838,7 @@ a:not(.btn):not(.navbar-brand):not(.nav-link):not(.social-icon):hover {
   font-size: 1.15rem;
   font-weight: 700;
   color: #FFFFFF;
-  margin: 0 0 0.55rem;
+  margin: 0 0 0.65rem;
   letter-spacing: -0.3px;
   line-height: 1.35;
 }
@@ -1848,6 +1848,60 @@ a:not(.btn):not(.navbar-brand):not(.nav-link):not(.social-icon):hover {
   color: #94A3B8;
   margin: 0;
   line-height: 1.55;
+}
+
+.achievement-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.achievement-list li {
+  font-size: 0.84rem;
+  color: #94A3B8;
+  line-height: 1.45;
+  position: relative;
+  padding-left: 1.15rem;
+}
+
+.achievement-list li strong {
+  color: #F1F5F9;
+  font-weight: 600;
+}
+
+.achievement-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.42rem;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #38BDF8;
+  box-shadow: 0 0 6px #38BDF8;
+}
+
+.achievement-card:has(.badge-amber) .achievement-list li::before {
+  background: #FBBF24;
+  box-shadow: 0 0 6px #FBBF24;
+}
+
+.achievement-card:has(.badge-purple) .achievement-list li::before {
+  background: #C084FC;
+  box-shadow: 0 0 6px #C084FC;
+}
+
+.achievement-card:has(.badge-blue) .achievement-list li::before {
+  background: #60A5FA;
+  box-shadow: 0 0 6px #60A5FA;
+}
+
+.achievement-card:has(.badge-cyan) .achievement-list li::before {
+  background: #38BDF8;
+  box-shadow: 0 0 6px #38BDF8;
 }
 
 /* --------------------------------------------------------------------------
@@ -2123,6 +2177,16 @@ a:not(.btn):not(.navbar-brand):not(.nav-link):not(.social-icon):hover {
   .featured-left-content {
     margin-bottom: 2rem;
   }
+  .contact-ambient-wrapper {
+    padding: 2.5rem 2rem;
+    border-radius: 28px;
+  }
+  .contact-heading {
+    font-size: 1.85rem;
+  }
+  .contact-form-card {
+    padding: 2rem 1.75rem;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -2152,6 +2216,65 @@ a:not(.btn):not(.navbar-brand):not(.nav-link):not(.social-icon):hover {
   }
   .stat-box {
     padding: 0.75rem 0.5rem;
+  }
+  .contact-section {
+    padding: 4rem 0;
+  }
+  .contact-ambient-wrapper {
+    padding: 2rem 1.5rem;
+    border-radius: 24px;
+  }
+  .contact-heading {
+    font-size: 1.65rem;
+  }
+  .contact-form-card {
+    padding: 1.5rem 1.25rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .contact-section {
+    padding: 3rem 0;
+  }
+  .contact-ambient-wrapper {
+    padding: 1.5rem 1rem;
+    border-radius: 20px;
+  }
+  .contact-heading {
+    font-size: 1.45rem;
+    line-height: 1.3;
+    margin: 0.6rem 0 0.5rem;
+    letter-spacing: -0.3px;
+  }
+  .contact-subtext {
+    font-size: 0.88rem;
+    margin-bottom: 1.25rem;
+    line-height: 1.5;
+  }
+  .contact-actions-row {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.65rem;
+  }
+  .contact-pill-btn {
+    width: 100%;
+    justify-content: center;
+    padding: 0.7rem 1.25rem;
+    font-size: 0.92rem;
+  }
+  .contact-form-card {
+    padding: 1.25rem 0.9rem;
+    border-radius: 16px;
+    margin-top: 0.5rem;
+  }
+  .form-control-custom,
+  .form-select-custom {
+    padding: 0.65rem 0.75rem;
+    font-size: 0.88rem;
+  }
+  .btn-send-message {
+    padding: 0.8rem 1.25rem;
+    font-size: 0.95rem;
   }
 }
 
