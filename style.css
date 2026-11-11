@@ -665,14 +665,17 @@ a:not(.btn):not(.navbar-brand):not(.nav-link):not(.social-icon):hover {
   font-weight: 500;
 }
 
-@media (max-width: 991.98px) {
-  .stat-col:nth-child(2) {
+@media (max-width: 767.98px) {
+  .stat-col {
     border-right: none;
-  }
-  .stat-col:nth-child(-n+2) {
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
     padding-bottom: 1rem;
     margin-bottom: 1rem;
+  }
+  .stat-col:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
   }
   .stat-box {
     padding: 0.5rem 1rem;
