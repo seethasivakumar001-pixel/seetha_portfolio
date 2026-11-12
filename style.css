@@ -1572,7 +1572,14 @@ a:not(.btn):not(.navbar-brand):not(.nav-link):not(.social-icon):hover {
   font-size: 1.15rem;
   font-weight: 700;
   color: #FFFFFF;
-  margin-bottom: 0.85rem;
+  margin-bottom: 0.65rem;
+}
+
+.project-card-desc {
+  font-size: 0.88rem;
+  color: #94A3B8;
+  line-height: 1.55;
+  margin-bottom: 1.15rem;
 }
 
 .project-tags-row {
